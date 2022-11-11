@@ -1,0 +1,4 @@
+# go.uber.org/automaxprocs v1.5.1
+## explicit; go 1.18
+go.uber.org/automaxprocs/internal/cgroups
+go.uber.org/automaxprocs/internal/runtime
