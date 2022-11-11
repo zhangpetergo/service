@@ -10,7 +10,7 @@ import (
 var build = "develop"
 
 func main() {
-	log.Println("staring service", build)
+	log.Println("staring service BILL", build)
 	defer log.Println("service ended")
 	shutdown := make(chan os.Signal, 1)
 	signal.Notify(shutdown, syscall.SIGINT, syscall.SIGTERM)

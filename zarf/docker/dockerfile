@@ -17,9 +17,8 @@ RUN go build -ldflags "-X main.build=${BUILD_REF}"
 FROM alpine:3.16
 ARG BUILD_DATE
 ARG BUILD_REF
-COPY --from=build_sales-api /service /service/service
+COPY --from=build_sales-api /service/service /service/service
 WORKDIR /service
-USER sales
 CMD ["./service"]
 
 LABEL org.opencontainers.image.created="${BUILD_DATE}" \
